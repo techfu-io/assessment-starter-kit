@@ -16,7 +16,7 @@ Your challenge is the following:
 Write a program that reads a number from standard input and prints that number to standard output. If the number is a multiple of three print “Fizz” instead of the number and for multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
 ```
 
-The program accepts a single number as input on standard input and print it's answer to standard output. The program is run using a `run.sh` or `run.cmd` driver script.
+The program accepts a single number as input on standard input and print it's answer to standard output. The program is run using a `run.sh` driver script.
 
 Here is a sample run:
 
@@ -44,7 +44,7 @@ other cases you haven't covered yet. Write cases for these as well and improve y
 Execute your solution with the sample cases above and compare the output to the sample. **Make sure the output generated
 by your solution matches the sample exactly.** So no extra whitespace, logging, etc.
 
-You can use the sample `test.sh` or `test.cmd` scripts for this. Run the script from within the directory containing your solution and the sample test cases:
+You can use the sample `test.sh` script for this. Run the script from within the directory containing your solution and the sample test cases:
 
 ```
 > ../bin/test.sh
@@ -54,9 +54,9 @@ Test 1 succeeded.
 
 ## Packaging your solution
 
-Package your solution in a ZIP file. Make sure the `run.sh` or `run.cmd` files are in the **root** of the ZIP file.
+Package your solution in a ZIP file. Make sure the `run.sh` files are in the **root** of the ZIP file.
 
-You can use the sample `package.sh` or `package.cmd` scripts for this. Run the script from within the directory containing your solution:
+You can use the sample `package.sh` script for this. Run the script from within the directory containing your solution:
 
 ```
 > ../bin/package.sh
@@ -65,13 +65,13 @@ Created submission.zip submission file.
 
 ## Submitting your solution
 
-Package your solution in a ZIP file. Make sure the `run.sh` or `run.cmd` files are in the **root** of the ZIP file.
-
-You can use the sample `package.sh` or `package.cmd` scripts for this. Run the script from within the directory containing your solution:
+Submit your packaged solution. You can use the `submit.sh` script for this. Run the script from within the directory containing your solution:
 
 ```
-> ../scripts/submit.sh baada555-ced5-4185-844e-5606d1907dd1
+> ../bin/submit.sh baada555-ced5-4185-844e-5606d1907dd1
 Created submission.zip submission file.
 Submitting your solution with assessment id baada555-ced5-4185-844e-5606d1907dd1.
 Done.
 ```
+
+The script will first test and package your solution before submitting it.

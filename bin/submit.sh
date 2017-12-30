@@ -1,6 +1,6 @@
 #!/bin/sh
 
-SUBMISSION_ENDPOINT=https://rn6odaj54d.execute-api.eu-west-1.amazonaws.com/dev/
+SUBMISSION_ENDPOINT=https://api.techfu.io/v1
 
 # Check whether we have assessment id
 AT_GUID=$1
@@ -37,7 +37,7 @@ echo ""
 echo "Submitting assessment $AT_GUID"
 
 # Submit assessment
-OUTPUT=`curl -q -H "Content-Type: application/octet-stream" --data-binary @submission.zip ${SUBMISSION_ENDPOINT}/${AT_GUID}/submit 2>&1`
+OUTPUT=`curl -q -H "Content-Type: application/octet-stream" --data-binary @submission.zip ${SUBMISSION_ENDPOINT}/assessment/${AT_GUID}/submit 2>&1`
 
 if [ "$?" -ne "0" ]; then
   echo "Submitting solution failed: ${OUTPUT}"
