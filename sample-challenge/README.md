@@ -13,7 +13,10 @@ When testing a submission, use the assessment id `baada555-ced5-4185-844e-5606d1
 Your challenge is the following:
 
 ```
-Write a program that reads a number from standard input and prints that number to standard output. If the number is a multiple of three print “Fizz” instead of the number and for multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
+Write a program that reads a number from standard input and prints that number to standard output.
+
+If the number is a multiple of three print “Fizz” instead of the number, for multiples of five print “Buzz”.
+For numbers which are multiples of both three and five print “FizzBuzz”.
 ```
 
 The program accepts a single number as input on standard input and print it's answer to standard output. The program is run using a `run.sh` driver script.
